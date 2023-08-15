@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>NFT preview card component</title>
+  </head>
+  <body class="flex justify-center items-center h-screen bg-gray-900">
+    <div class="container p-[15px] bg-gray-800 w-[260px] rounded-[10px]">
+      <div class="group nft w-[230px] h-[230px] relative bg-[url('../images/image-equilibrium.jpg')] cursor-pointer flex justify-center items-center bg-cover rounded-[10px] before:content-[''] before:absolute before:w-full before:h-full before:rounded-[10px] before:bg-cyan-300 before:opacity-50 before:hidden hover:before:block">
+        <img class="absolute hidden group-hover:block " src="./images/icon-view.svg" alt="">
+      </div>
+      <h1 class="text-x text-white hover:text-cyan-300 py-[15px] cursor-pointer">Equilibrium #3429</h1>
+      <p class="text-gray-400">Our Equilibrium collection promotes balance and calm.</p>
+      <div class="eth flex justify-between items-center py-[15px] border-b-[0.5px] border-gray-500 ">
+        <p class="text-cyan-300 flex gap-[10px] text-xs"><img src="./images/icon-ethereum.svg" alt=""> 0.041ETH</p>
+        <p class="text-gray-400 flex gap-[10px] text-xs"><img src="./images/icon-clock.svg" alt=""> 3 days left</p>
+      </div>
+      <div class="flex gap-[10px] mt-[10px]">
+        <img class="w-[20px] border-[0.5px] rounded-full" src="./images/image-avatar.png" alt="">
+        <p class="text-xs text-gray-400">Creation of <span class="text-white hover:text-cyan-300">Jules Wyvern</span></p>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
